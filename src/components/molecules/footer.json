@@ -1,0 +1,36 @@
+{
+    "collectionName": "components_molecules_footers",
+    "info": {
+      "displayName": "Footer",
+      "icon": "football-ball"
+    },
+    "options": {},
+    "attributes": {
+        "footerColumn1": {
+            "displayName": "Footer Column 1",
+            "type": "component",
+            "repeatable": false,
+            "component": "atoms.footer-column-1"
+        },
+        "footerColumn2": {
+            "displayName": "Footer Column 2",
+            "type": "component",
+            "repeatable": true,
+            "component": "atoms.footer-column-2"
+        },
+        "footerColumn3": {
+            "displayName": "Footer Column 3",
+            "type": "component",
+            "repeatable": false,
+            "component": "atoms.footer-column-3"
+        },
+        "copyright": {
+          "type": "text"
+        },
+        "footLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "atoms.link"
+        }
+    }
+}

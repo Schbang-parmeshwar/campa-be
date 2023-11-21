@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_templates_landings",
+  "info": {
+    "displayName": "Landing",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.section"
+    }
+  }
+}

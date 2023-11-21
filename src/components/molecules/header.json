@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_molecules_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "headphones",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "megamenu": {
+      "displayName": "Mega Menu",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.mega-menu"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    }
+  }
+}

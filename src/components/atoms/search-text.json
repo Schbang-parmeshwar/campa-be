@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_atoms_search_texts",
+  "info": {
+    "displayName": "Search Text",
+    "icon": "search-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

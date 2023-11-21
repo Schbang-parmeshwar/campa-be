@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_atoms_pointers",
+  "info": {
+    "displayName": "Pointers",
+    "icon": "hand-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "pointer_text": {
+      "type": "text"
+    },
+    "sub_pointer_text": {
+      "type": "richtext"
+    }
+  }
+}

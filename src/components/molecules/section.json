@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_molecules_sections",
+  "info": {
+    "displayName": "section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    },
+    "sliders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.files"
+    },
+    "desktop_banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.files"
+    },
+    "mobile_banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.files"
+    },
+    "dynamic_titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text-value"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    }
+  }
+}

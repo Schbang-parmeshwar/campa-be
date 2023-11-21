@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_atoms_footer_column_2s",
+  "info": {
+    "displayName": "Footer Column 2",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "parent": {
+      "type": "string"
+    },
+    "child": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.link"
+    }
+  }
+}

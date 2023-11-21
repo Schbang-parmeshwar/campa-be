@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_atoms_footer_column_1s",
+  "info": {
+    "displayName": "Footer Column 1",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "footerContent": {
+      "type": "text"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.social-link"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "helpText": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    }
+  }
+}

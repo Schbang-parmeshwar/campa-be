@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_molecules_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "globe-americas"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.social-link"
+    }
+   
+  }
+}

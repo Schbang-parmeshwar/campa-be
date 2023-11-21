@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_atoms_row_text",
+  "info": {
+    "displayName": "Row Text",
+    "icon": "search-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "value": {
+      "type": "text"
+    }
+  }
+}

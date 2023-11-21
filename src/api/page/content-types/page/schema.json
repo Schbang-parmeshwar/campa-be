@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.meta-fields"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.header"
+    },
+    "pageTemplates": {
+      "type": "dynamiczone",
+      "components": [
+        "templates.landing"
+      ]
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.footer"
+    }
+  }
+}

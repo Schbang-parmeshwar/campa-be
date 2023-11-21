@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_atoms_text_value",
+  "info": {
+    "displayName": "Text Value",
+    "icon": "search-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_atoms_footer_column_3s",
+  "info": {
+    "displayName": "Footer Column 3",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "parent": {
+      "type": "string"
+    },
+    "child": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.link"
+    },
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    },
+    "content": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

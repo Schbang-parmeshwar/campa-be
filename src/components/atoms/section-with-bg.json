@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_atoms_section_with_bgs",
+  "info": {
+    "displayName": "Section with BG",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desktop_banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "mobile_banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    }
+  }
+}

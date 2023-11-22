@@ -24,21 +24,11 @@
       "repeatable": true,
       "component": "atoms.meta-fields"
     },
-    "header": {
-      "type": "component",
-      "repeatable": false,
-      "component": "molecules.header"
-    },
     "pageTemplates": {
       "type": "dynamiczone",
       "components": [
         "templates.landing"
       ]
-    },
-    "footer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "molecules.footer"
     }
   }
 }

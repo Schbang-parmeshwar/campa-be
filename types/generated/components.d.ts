@@ -141,11 +141,11 @@ export interface AtomsMegaMenu extends Schema.Component {
   info: {
     displayName: 'Mega Menu';
     icon: 'dumbbell';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     link: Attribute.String;
-    subMenu: Attribute.Component<'atoms.sub-menu', true>;
   };
 }
 
@@ -320,13 +320,12 @@ export interface MoleculesFooter extends Schema.Component {
   info: {
     displayName: 'Footer';
     icon: 'football-ball';
+    description: '';
   };
   attributes: {
-    footerColumn1: Attribute.Component<'atoms.footer-column-1'>;
-    footerColumn2: Attribute.Component<'atoms.footer-column-2', true>;
-    footerColumn3: Attribute.Component<'atoms.footer-column-3'>;
     copyright: Attribute.Text;
     footLinks: Attribute.Component<'atoms.link', true>;
+    social_media: Attribute.Component<'atoms.social-link', true>;
   };
 }
 
@@ -341,6 +340,7 @@ export interface MoleculesHeader extends Schema.Component {
     logo: Attribute.Media;
     megamenu: Attribute.Component<'atoms.mega-menu', true>;
     button: Attribute.Component<'atoms.link'>;
+    social_media: Attribute.Component<'atoms.social-link', true>;
   };
 }
 
@@ -375,6 +375,7 @@ export interface MoleculesSection extends Schema.Component {
     dynamic_titles: Attribute.Component<'atoms.text-value', true>;
     title: Attribute.String;
     subTitle: Attribute.String;
+    vid_url: Attribute.RichText;
   };
 }
 

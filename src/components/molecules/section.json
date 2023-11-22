@@ -36,6 +36,9 @@
     },
     "subTitle": {
       "type": "string"
+    },
+    "vid_url": {
+      "type": "richtext"
     }
   }
 }

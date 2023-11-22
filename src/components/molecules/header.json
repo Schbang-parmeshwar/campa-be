@@ -27,6 +27,11 @@
       "type": "component",
       "repeatable": false,
       "component": "atoms.link"
+    },
+    "social_media": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.social-link"
     }
   }
 }

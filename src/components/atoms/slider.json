@@ -1,0 +1,42 @@
+{
+    "collectionName": "components_atoms_slider",
+    "info": {
+      "displayName": "Slider",
+      "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+          },
+          "subTitle": {
+            "type": "string"
+          },
+          "description": {
+            "type": "richtext"
+          },
+      "background_image": {
+        "type": "media",
+        "multiple": true,
+        "required": false,
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ]
+      },
+      "bottle_image": {
+        "type": "media",
+        "multiple": true,
+        "required": false,
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ]
+      }
+    }
+  }
+  

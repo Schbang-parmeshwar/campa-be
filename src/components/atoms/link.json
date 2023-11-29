@@ -30,7 +30,9 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ]
     },
     "media_mobile": {
@@ -38,8 +40,13 @@
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ]
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

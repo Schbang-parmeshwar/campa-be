@@ -14,6 +14,7 @@
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.9",
     "@strapi/plugin-i18n": "4.13.7",
     "@strapi/plugin-users-permissions": "4.13.7",
+    "@strapi/provider-upload-cloudinary": "^4.15.4",
     "@strapi/provider-upload-s3-cloudfront": "file:providers/upload-s3-cloudfront",
     "@strapi/strapi": "4.13.7",
     "detect-svg-scripts": "^1.0.0",

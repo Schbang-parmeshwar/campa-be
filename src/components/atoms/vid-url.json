@@ -1,0 +1,30 @@
+{
+    "collectionName": "components_atoms_vid_url",
+    "info": {
+      "displayName": "Vid Url",
+      "icon": "search-dollar",
+      "description": ""
+    },
+    "options": {},
+    "attributes": {
+      "url": {
+        "allowedTypes": [
+          "files",
+          "videos",
+          "audios"
+        ],
+        "type": "media",
+        "multiple": false      },
+      "thumbnail":  {
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ],
+        "type": "media",
+        "multiple": false
+      }
+    }
+  }
+  

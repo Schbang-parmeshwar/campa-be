@@ -55,6 +55,7 @@ export interface AtomsFiles extends Schema.Component {
     file: Attribute.Media;
     title: Attribute.String;
     description: Attribute.RichText;
+    subTitle: Attribute.String;
   };
 }
 
@@ -121,6 +122,7 @@ export interface AtomsLink extends Schema.Component {
     icon: Attribute.Media;
     media: Attribute.Media;
     media_mobile: Attribute.Media;
+    description: Attribute.Text;
   };
 }
 
@@ -133,6 +135,18 @@ export interface AtomsLogoTagline extends Schema.Component {
   attributes: {
     logo: Attribute.Media;
     tagline: Attribute.Text;
+  };
+}
+
+export interface AtomsMediaFiles extends Schema.Component {
+  collectionName: 'components_atoms_media_files';
+  info: {
+    displayName: 'Section Media Files';
+    description: '';
+  };
+  attributes: {
+    desktop_files: Attribute.Media;
+    mobile_files: Attribute.Media;
   };
 }
 
@@ -258,6 +272,21 @@ export interface AtomsSectionWithContent extends Schema.Component {
   };
 }
 
+export interface AtomsSlider extends Schema.Component {
+  collectionName: 'components_atoms_slider';
+  info: {
+    displayName: 'Slider';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subTitle: Attribute.String;
+    description: Attribute.RichText;
+    background_image: Attribute.Media;
+    bottle_image: Attribute.Media;
+  };
+}
+
 export interface AtomsSocialLink extends Schema.Component {
   collectionName: 'components_social_link_social_links';
   info: {
@@ -268,6 +297,7 @@ export interface AtomsSocialLink extends Schema.Component {
   attributes: {
     social_name: Attribute.String;
     link: Attribute.String;
+    logo: Attribute.Media;
   };
 }
 
@@ -312,6 +342,19 @@ export interface AtomsTextValue extends Schema.Component {
   };
   attributes: {
     title: Attribute.Text;
+  };
+}
+
+export interface AtomsVidUrl extends Schema.Component {
+  collectionName: 'components_atoms_vid_url';
+  info: {
+    displayName: 'Vid Url';
+    icon: 'search-dollar';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.Media;
+    thumbnail: Attribute.Media;
   };
 }
 
@@ -369,13 +412,14 @@ export interface MoleculesSection extends Schema.Component {
   };
   attributes: {
     cta: Attribute.Component<'atoms.link'>;
-    sliders: Attribute.Component<'atoms.files', true>;
+    sliders: Attribute.Component<'atoms.slider', true>;
     desktop_banner: Attribute.Component<'atoms.files'>;
     mobile_banner: Attribute.Component<'atoms.files'>;
     dynamic_titles: Attribute.Component<'atoms.text-value', true>;
     title: Attribute.String;
     subTitle: Attribute.String;
-    vid_url: Attribute.RichText;
+    vid_files: Attribute.Component<'atoms.vid-url', true>;
+    media_files: Attribute.Component<'atoms.media-files'>;
   };
 }
 
@@ -413,6 +457,7 @@ declare module '@strapi/strapi' {
       'atoms.footer-column-3': AtomsFooterColumn3;
       'atoms.link': AtomsLink;
       'atoms.logo-tagline': AtomsLogoTagline;
+      'atoms.media-files': AtomsMediaFiles;
       'atoms.mega-menu': AtomsMegaMenu;
       'atoms.menu': AtomsMenu;
       'atoms.meta-fields': AtomsMetaFields;
@@ -421,10 +466,12 @@ declare module '@strapi/strapi' {
       'atoms.search-text': AtomsSearchText;
       'atoms.section-with-bg': AtomsSectionWithBg;
       'atoms.section-with-content': AtomsSectionWithContent;
+      'atoms.slider': AtomsSlider;
       'atoms.social-link': AtomsSocialLink;
       'atoms.sub-menu': AtomsSubMenu;
       'atoms.tab': AtomsTab;
       'atoms.text-value': AtomsTextValue;
+      'atoms.vid-url': AtomsVidUrl;
       'molecules.footer': MoleculesFooter;
       'molecules.header': MoleculesHeader;
       'molecules.hero': MoleculesHero;

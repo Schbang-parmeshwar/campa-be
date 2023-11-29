@@ -14,7 +14,7 @@
     "sliders": {
       "type": "component",
       "repeatable": true,
-      "component": "atoms.files"
+      "component": "atoms.slider"
     },
     "desktop_banner": {
       "type": "component",
@@ -37,8 +37,15 @@
     "subTitle": {
       "type": "string"
     },
-    "vid_url": {
-      "type": "richtext"
+    "vid_files":  {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.vid-url"
+    },
+    "media_files": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.media-files"
     }
   }
 }

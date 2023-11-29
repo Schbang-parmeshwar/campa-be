@@ -22,9 +22,11 @@ module.exports = [
             "blob:",
             "*.cloudfront.net",
             "*.amazonaws.com",
+            "res.cloudinary.com",
 
           ],
-          "media-src": ["'self'", "data:", "blob:"],
+          "media-src": ["'self'", "data:", "blob:", "res.cloudinary.com"
+          ],
           upgradeInsecureRequests: null,
         },
       },

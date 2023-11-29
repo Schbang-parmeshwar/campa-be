@@ -5,7 +5,12 @@ module.exports = [
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
+  {
+    name: "strapi::body",
+    config: {
+      jsonLimit: "5mb", /*  modify JSON body limit */
+    },
+  },
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
@@ -40,5 +45,5 @@ module.exports = [
       // headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
     },
-  }
+  },
 ];

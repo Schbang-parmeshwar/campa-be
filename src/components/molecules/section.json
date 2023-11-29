@@ -37,7 +37,7 @@
     "subTitle": {
       "type": "string"
     },
-    "vid_files":  {
+    "vid_files": {
       "type": "component",
       "repeatable": true,
       "component": "atoms.vid-url"
@@ -46,6 +46,9 @@
       "type": "component",
       "repeatable": false,
       "component": "atoms.media-files"
+    },
+    "animation": {
+      "type": "json"
     }
   }
 }

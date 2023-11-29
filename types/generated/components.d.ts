@@ -420,6 +420,7 @@ export interface MoleculesSection extends Schema.Component {
     subTitle: Attribute.String;
     vid_files: Attribute.Component<'atoms.vid-url', true>;
     media_files: Attribute.Component<'atoms.media-files'>;
+    animation: Attribute.JSON;
   };
 }
 

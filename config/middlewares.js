@@ -40,8 +40,8 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       origin: ['http://localhost:3000', 'https://campa-cola.vercel.app', 'https://hdz0xl9q-1337.inc1.devtunnels.ms/', 'https://hdz0xl9q-1337.inc1.devtunnels.ms/api/layout?populate=deep','http://18.225.31.186'],
-      // methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
-      // headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
     },
   },

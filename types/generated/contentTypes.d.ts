@@ -723,7 +723,9 @@ export interface ApiPagePage extends Schema.CollectionType {
     title: Attribute.String;
     slug: Attribute.UID<'api::page.page', 'title'>;
     metaData: Attribute.Component<'atoms.meta-fields', true>;
-    pageTemplates: Attribute.DynamicZone<['templates.landing']>;
+    pageTemplates: Attribute.DynamicZone<
+      ['templates.landing', 'templates.terms-and-conditions']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

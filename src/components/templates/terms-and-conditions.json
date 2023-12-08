@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_templates_terms_&_conditions",
+    "info": {
+        "displayName": "Terms & Conditions",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "heading": {
+            "type": "text"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "sections": {
+            "type": "component",
+            "repeatable": true,
+            "component": "molecules.hero"
+        }
+    }
+}

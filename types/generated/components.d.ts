@@ -398,8 +398,6 @@ export interface MoleculesHero extends Schema.Component {
     title: Attribute.Text;
     description: Attribute.RichText;
     button: Attribute.Component<'atoms.link'>;
-    desktop_banner: Attribute.Media;
-    mobile_banner: Attribute.Media;
     subtitle: Attribute.String;
   };
 }
@@ -447,6 +445,19 @@ export interface TemplatesLanding extends Schema.Component {
   };
 }
 
+export interface TemplatesTermsAndConditions extends Schema.Component {
+  collectionName: 'components_templates_terms_&_conditions';
+  info: {
+    displayName: 'Terms & Conditions';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.Text;
+    description: Attribute.RichText;
+    sections: Attribute.Component<'molecules.hero', true>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Shared {
     export interface Components {
@@ -479,6 +490,7 @@ declare module '@strapi/strapi' {
       'molecules.section': MoleculesSection;
       'molecules.social': MoleculesSocial;
       'templates.landing': TemplatesLanding;
+      'templates.terms-and-conditions': TemplatesTermsAndConditions;
     }
   }
 }

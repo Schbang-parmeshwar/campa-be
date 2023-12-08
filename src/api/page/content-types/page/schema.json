@@ -27,7 +27,8 @@
     "pageTemplates": {
       "type": "dynamiczone",
       "components": [
-        "templates.landing"
+        "templates.landing",
+        "templates.terms-and-conditions"
       ]
     }
   }

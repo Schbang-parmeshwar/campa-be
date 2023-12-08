@@ -18,26 +18,6 @@
       "repeatable": false,
       "component": "atoms.link"
     },
-    "desktop_banner": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "mobile_banner": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
     "subtitle": {
       "type": "string"
     }
